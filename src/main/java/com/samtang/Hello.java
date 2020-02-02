@@ -4,6 +4,15 @@ public class Hello {
     public static void main(String[] args) {
 //        System.out.println("Hello World");
 //        new Person().Hello();
+
+        String s = "abced";
+        //s = null; //如果為 null, 下方取得的方法會出現編譯錯誤 Exception
+
+        System.out.println(s.charAt(3));
+        System.out.println(s.substring(3));
+        System.out.println(s.substring(1,4));
+        System.out.println(s.length());
+
         Person p = new Person("Tom",66.5f, 1.7f);
         p.Hello();
 

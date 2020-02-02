@@ -3,6 +3,13 @@ package com.samtang
 fun main() {
 //    println("Hello Kotlin")
 //    Human().Hello()
+    //var s = "abcde"  //一般宣告 String 的方式
+    var s:String? = "abcde" //因為有可能是 Null 值, 所以需指定型型態並在後方加上問號
+    s = null
+    println(s?.length) //加上問號, 處理 Null 之值
+    println(s?.get(3)) //加上問號, 處理 Null 之值
+    println(s?.substring(3)) //加上問號, 處理 Null 之值
+
     val h = Human(weight = 66.5f, height = 1.7f)
     h.Hello()
     println(h.bmi())
